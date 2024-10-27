@@ -1,0 +1,247 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*Navigation*/
+
+:root{
+    --navbar-height: 59px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 150px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3em;
+}
+
+#navbar ul li a{
+       color: rgb(255, 255, 255);
+        display: block;
+        padding: 3px 22px;
+        border-radius: 20px;
+        text-decoration: none;
+}
+
+#navbar ul li a:hover{
+           color: black;
+           background-color: rgb(255, 255, 255);
+
+}
+
+#logo img{
+    mix-blend-mode: multiply;
+    opacity: 1;
+}
+
+/*Home page utility*/
+
+#home{
+   display: flex;
+   flex-direction: column;
+   padding: 3px 200px; 
+   justify-content: center;
+   align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(../bg7.JPEG) no-repeat center center/cover;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h1{
+    color: royalblue;
+    text-align: center;
+}
+
+#home p{
+    color: royalblue;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/*Applying services for global*/
+
+  #service .box img{
+    mix-blend-mode: multiply;
+              
+  }
+
+.servicess{
+    border: none;
+      background-color: rgb(222, 241, 241);
+}
+
+#service{
+    height: 250px;
+    width: 1320px;
+    margin: 4px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#service .box{
+          border: 2px solid hotpink;
+          background-color: rgb(248, 228, 221);
+          height: 180px;
+          width: 800px;
+          padding: 34px;
+          margin: 3px 6px;
+          border-radius: 8px;
+          box-shadow: 5px 5px 15px;
+}
+
+#service .box img{
+             height: 120px;
+             width: 190px;
+             margin: auto;
+             display: block;
+}
+
+.primary{
+     font-size: 2rem;
+     padding: 13px;
+}
+
+.second{
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+/*button shape*/
+
+.btn{
+    padding: 6px 24px;
+    border: 2px solid white;
+    background-color: rgb(42, 161, 165);
+    border-radius: 4px;
+    color: white;
+    font-family: serif;
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
+.center{
+    text-align: center;
+}
+
+/*Client Section*/
+
+.clien{
+    mix-blend-mode: multiply;
+}
+
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients h2{
+         font-size: 2rem;
+         font-weight: 220px;
+         font-family: Arial, Helvetica, sans-serif;
+}
+
+#clients::before{
+        content: "";
+        position: absolute;
+        background: url(../gen.PNG) no-repeat center center/cover;
+        height: 55%;
+        width: 100%;
+        z-index: -1;
+        opacity: 2;
+}
+
+#client img{
+      height: 130px;
+}
+
+.clien{
+    padding: 30px;
+}
+
+/*Contact edit*/
+
+#contact{
+    position: relative;
+    background-color: rgb(177, 190, 185);
+    height: 300px;
+}
+
+#contactbox{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 34px;
+}
+
+#contactbox input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 0.9rem;
+}
+
+#contactbox textarea{
+         width: 100%;
+         padding: 0.5rem;
+         border-radius: 9px;
+         font-size: 1.1rem;
+}
+
+#contactbox form{
+        width: 40%;
+}
+
+#contactbox label{
+         font-size: 1.3rem;
+}
+
+.primarycenter{
+    font-size: 2.3rem;
+    font-family: 'Lucida Sans';
+}
+
+/*footer setting*/
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
